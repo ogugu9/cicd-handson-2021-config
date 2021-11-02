@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: goapp-deployment
 spec:
+  replicas: 3 # ここに追加
   selector:
     matchLabels:
       app: goapp
